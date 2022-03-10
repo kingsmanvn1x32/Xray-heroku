@@ -1,0 +1,30 @@
+{
+  "name": "Heroku-v2ray",
+  "description": "将v2ray部署在Heroku上",
+  "keywords": [
+    "v2ray VMess VLESS"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议VMess或VLESS，请填小写的vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID",
+      "value": "e40d2888-03f6-4859-e84d-a743db763d52",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/",
+      "required": true
+    }
+  },
+  "website": "https://github.com/kingsman9413/wifi",
+  "repository": "https://github.com/kingsman9413/wifi",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
