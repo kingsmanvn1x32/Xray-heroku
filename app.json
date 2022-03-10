@@ -17,7 +17,7 @@
     },
     "WS_PATH": {
       "description": "websocket路径",
-      "value": "/",
+      "value": "/ray",
       "required": true
     }
   },
