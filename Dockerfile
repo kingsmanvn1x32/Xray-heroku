@@ -1,13 +1,23 @@
-FROM nginx:1.19.3-alpine
-ENV TZ=Asia/Shanghai
-RUN apk add --no-cache --virtual .build-deps ca-certificates bash curl unzip php7
-COPY nginx/default.conf.template /etc/nginx/conf.d/default.conf.template
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY nginx/static-html /usr/share/nginx/html/index
-COPY nginx/h5-speedtest /usr/share/nginx/html/speedtest
-COPY configure.sh /configure.sh
-COPY v2ray_config /
-RUN chmod +x /configure.sh
+FROM caddy:builder-alpine AS builder
 
-ENTRYPOINT ["sh", "/configure.sh"]
+RUN xcaddy build \
+        --with github.com/mholt/caddy-l4 \
+        --with github.com/mholt/caddy-dynamicdns \
+        --with github.com/caddy-dns/cloudflare
 
+FROM caddy:builder-alpine
+COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+RUN apk update && \
+    apk add --no-cache --virtual ca-certificates caddy tor curl openntpd \
+    && rm -rf /var/cache/apk/*
+
+ENV XDG_CONFIG_HOME /etc/caddy
+ENV XDG_DATA_HOME /usr/share/caddy
+
+COPY etc/Caddyfile /conf/Caddyfile
+COPY etc/config.json /conf/config.json
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD /start.sh
