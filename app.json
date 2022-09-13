@@ -1,6 +1,6 @@
 {
     "name": "wifi",
-    "description": "",
+    "description": "wifi speedup",
     "keywords": ["vmess vless trojan shadowsocks socks"],
     "env": {
         "AA": {
