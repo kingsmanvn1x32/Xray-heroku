@@ -12,17 +12,17 @@
                         "id": "$AUUID"
                     }
                 ],
-                "disableInsecureEncryption": true
+                "disableInsecureEncryption": false
             },
             "streamSettings": {
                 "network": "ws",
-                "allowInsecure": false,
+                "allowInsecure": true,
                 "wsSettings": {
                   "path": "/$AUUID-vmess"
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -44,13 +44,13 @@
             },
             "streamSettings": {
                 "network": "ws",
-                "allowInsecure": false,
+                "allowInsecure": true,
                 "wsSettings": {
                   "path": "/$AUUID-vless"
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -76,7 +76,7 @@
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -103,7 +103,7 @@
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -125,13 +125,13 @@
             },
             "streamSettings": {
                 "network": "ws",
-                "allowInsecure": false,
+                "allowInsecure": true,
                 "wsSettings": {
                   "path": "/$AUUID-trojan"
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -149,7 +149,6 @@
                  "bittorrent"
               ],
               "domains": [
-                  "geosite:cn",
                   "geosite:category-ads-all"
               ],
               "outboundTag": "blocked"
@@ -199,8 +198,8 @@
     "dns": {
         "servers": [
             {
-                "address": "https+local://dns.google/dns-query",
-                "address": "https+local://cloudflare-dns.com/dns-query",
+                "address": "8.8.8.8",
+                "address": "8.8.4.4",
                 "skipFallback": true
             }
         ],
