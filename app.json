@@ -1,6 +1,6 @@
 {
-    "name": "fu*k_github",
-    "description": "",
+    "name": "wifi",
+    "description": "wifi speed up",
     "keywords": ["vmess vless trojan shadowsocks socks"],
     "env": {
         "AA": {
@@ -20,6 +20,6 @@
             "value": "chacha20-ietf-poly1305"
         }
     },
-    "repository": "",
+    "repository": "[Github](HTTPS://github.com/kingsman9413/kingsman)",
     "stack": "container"
 }
