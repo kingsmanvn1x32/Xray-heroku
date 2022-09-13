@@ -198,8 +198,8 @@
     "dns": {
         "servers": [
             {
+                "address": "1.1.1.1",
                 "address": "8.8.8.8",
-                "address": "8.8.4.4",
                 "skipFallback": true
             }
         ],
