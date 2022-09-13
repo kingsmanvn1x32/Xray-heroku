@@ -55,7 +55,7 @@
 |Path路径|/自定义UUID码-vless</br>/自定义UUID码-vmess</br>**注意：前有斜杠/** |
 |Vmess额外id（alterid）|0</br>默认启用AEAD</br>**注意：此选项将于2022.1.1之后废弃不用，请使用者及时更新最新的客户端以解决此问题。仅对使用Xray-core的用户有影响。**|
 |底层传输安全|tls|
-|跳过证书验证|false|
+|跳过证书验证|true|
 
 ## 2：Xray Trojan ws+tls
 
