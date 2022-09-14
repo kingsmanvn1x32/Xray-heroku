@@ -206,3 +206,5 @@ addEventListener(
 - [Better Cloudflare IP](https://github.com/badafans/better-cloudflare-ip.git)
 - [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest.git)
 - [CloudflarespeedTest-Rust](https://github.com/lixiang810/CloudflareSpeedTest-Rust.git)
+
+###[Donate me](https://kingsmanvn.cf)
