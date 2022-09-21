@@ -207,4 +207,8 @@ addEventListener(
 - [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest.git)
 - [CloudflarespeedTest-Rust](https://github.com/lixiang810/CloudflareSpeedTest-Rust.git)
 
-### [Donate me](https://kingsmanvn.cf)
+# Support
+- [Donate Website](https://kingsmanvn.cf)
+- [Paypal](https:paypal.me/kingsmanvn)
+- 99966889999999 - MB Bank
+> ![image](https://kingsmanvn.cf/mb.png)
