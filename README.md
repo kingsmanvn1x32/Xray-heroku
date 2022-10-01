@@ -211,4 +211,3 @@ addEventListener(
 - [Donate Website](https://kingsmanvn.cf)
 - [Paypal](https:paypal.me/kingsmanvn)
 - **99966889999999 - MB Bank**
-> ![image](https://kingsmanvn.cf/mb.png)
