@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/Kingsmanvn-Official/xray-heroku/main/1.png)
+![image](https://github.com/Kingsmanvn-Official/xray-heroku/raw/main/1.png)
 ## 两个Heroku仓库被封，不玩了。捐赠地址（TRC20）：TScd7U9QUXZVS6DawwoRPHnNminreN4fJp
 
 ## 注意事项
@@ -24,7 +24,7 @@
 
 1.将本项目fork至自己仓库修改`Deploy to Heroku`按键指向地址为自己仓库地址
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/kingsmanvn-official/xray-heroku) 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Kingsmanvn-Official/xray-heroku) 
 
 2.点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，应用程序名无需填写也能创建，名字会由heroku随机生成，选择节点（美国或者欧洲），新用户只需要自定义UUID码和CADDYIndexPage（参考：[Caddy主页配置](https://github.com/DaoChen6/IF-XTW/blob/master/README.md#5caddy%E4%B8%BB%E9%A1%B5%E9%85%8D%E7%BD%AE))，其他建议保持默认，点击下面deploy，几秒后搞定！   
 
